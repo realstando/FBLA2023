@@ -1,0 +1,1 @@
+A website that advertises job positions and allows jobs applications for a clothing company called Vamp. Made by Pratyush Patnaik (platypus patrick) & Ryan Wang (realstando). 
