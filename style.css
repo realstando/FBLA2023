@@ -1,8 +1,25 @@
 * {
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-    font-size: +100;
+    font-size: +50;
     margin: 0;
     padding: 0;
+}
+
+nav {
+    height:80px;
+    background: hsl(250, 90%, 43%)
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight:bold;
+    font-style: none;
+    padding:0 -0rem;
 }
 
