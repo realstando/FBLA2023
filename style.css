@@ -7,7 +7,7 @@
 }
 
 nav {
-    height:80px;
+    height: 80px;
     background: hsl(250, 90%, 43%)
     display: flex;
     justify-content: space-between;
