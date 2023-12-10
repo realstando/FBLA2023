@@ -1,25 +1,40 @@
 * {
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-    font-size: +50;
+    font-size: +40;
     margin: 0;
     padding: 0;
 }
 
+.header {
+    width: 100%;
+    height: 15vh;
+    padding: 0 8%;
+}
+
 nav {
-    height: 80px;
-    background: hsl(250, 90%, 43%)
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem calc((100vw - 1300px) / 2);
+    padding: 20px 0;
 }
 
-.logo{
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*.logo{
     color: #000;
     font-size: 1.5rem;
     font-weight:bold;
     font-style: none;
     padding:0 -0rem;
-}
+}*/
 
