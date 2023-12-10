@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-    font-size: +40;
+    font-size: +35;
     margin: 0;
     padding: 0;
 }
@@ -30,11 +30,11 @@ a {
     color: black;
 }
 
-/*.logo{
+.logo{
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight:bold;
     font-style: none;
     padding:0 -0rem;
-}*/
+}
 
