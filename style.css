@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
@@ -34,12 +36,12 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: lightgrey;
     font-size: +22;
 }
 
 .logo{
-    color: #000;
+    color: #090909;
     font-size: 3rem;
     font-weight:bold;
     font-style: none;
@@ -69,3 +71,9 @@ a {
 .main-desc h1 {
     margin-bottom: 25px;
 }
+
+
+  
+
+  
+  
