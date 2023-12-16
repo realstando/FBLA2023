@@ -12,6 +12,7 @@
     height: 12vh;
     padding: 0 8%;
     background-color: #A9A9A9;
+    top: 0;
     position: sticky;
 }
 
@@ -60,6 +61,11 @@ a {
 
 .top-text h2 {
     font-size: +50;
+}
+
+.top-image {
+    height: 88vh;
+    width: auto;
 }
 
 .main-desc {
