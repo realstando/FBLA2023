@@ -78,6 +78,9 @@ a {
 .accordion {
     margin-bottom: 30px;
 }
+.accordion.active .accordion-content {
+    display: block;
+}
 .accordion-heading {
     cursor: pointer;
     display: flex;
