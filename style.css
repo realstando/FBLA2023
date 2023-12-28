@@ -11,6 +11,19 @@ html, body {
     padding: 0;
 }
 
+h1 {
+    font-size: 10vh;
+}
+h2 {
+    font-size: 8vh;
+}
+h3 {
+    font-size: 6vh;
+}
+p {
+    font-size: 4vh;
+}
+
 .header {
     width: 100%;
     height: 12vh;
@@ -50,21 +63,55 @@ a {
     font-weight: bold;
 }
 
-body {
-    background-image: url('placeholder image.png');
-    background-repeat: no-repeat;
-    background-position: right top;
-    margin: 0;
-    padding: 0;
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8f8f74;
 }
-
-.left-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 50%;
-    background-color: #FFB6C1; /* Blush Pink */
+.top-text {
+    margin-left: 5vw;
+}
+.top-image {
+    height: 88vh;
+    width: auto;
 }
 
 
+.main-desc {
+    margin: 75px auto;
+    text-align: center;
+}
+.main-desc h1 {
+    margin-bottom: 40px;
+}
+
+
+.job-desc {
+    max-width: 1250px;
+    margin: 20px auto;
+}
+.job-desc h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.accordion-wrapper {
+    padding: 0 20px;
+}
+.accordion {
+    margin-bottom: 30px;
+}
+.accordion.active .accordion-content {
+    display: block;
+}
+.accordion-heading {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.accordion-content {
+    padding: 0 15px;
+    display: none;
+}
