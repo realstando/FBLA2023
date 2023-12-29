@@ -83,86 +83,65 @@ a {
     text-align: center;
     margin-bottom: 40px;
 }
-.accordion.active .accordion-content {
-    display: block;
-}
-.accordion-heading {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-.accordion-content {
-    padding: 0 15px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
+
 .wrapper {
     padding:0;
     margin:0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    
-}
-.wrapper{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-width: 75%;
     margin: auto;
-
 }
-
 .wrapper > h1 {
     margin: 1.2rem 0;
     text-align: center;
-}
-.wrapper > h1 {
     letter-spacing: 3px;
 }
 
-.accordion {
+.accordion-heading {
     background-color:white;
     color:black;
     cursor: pointer;
-    font-size:1.9rem;
+    font-size:2rem;
     width:100%;
     padding: 2rem 2.5rem;
     border: none;
     outline: none;
-    transition:0.4s;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-
 }
-.accordion i{
+.accordion-heading i{
     font-size: 1.8rem;
-
+    transition: 0.4s;
 }
-
+.accordion.active .accordion-heading i {
+    transform: rotate(180deg);
+}
 .active,
-.accordion:hover {
+.accordion-heading:hover {
     background-color: #f1f7f5;
- 
-}
-.panel {
-    padding:0 2rem 2.5rem 2rem;
-    background-color: white;
-    overflow: hidden;
-    background-color: #f1f7f5;
-    display: none;
-}
-.panel p{
-    color: black;
-    font-size: 1.2rem;
-    line-height: 1.4;
 }
 
-.faq{
+.accordion-content {
+    padding: 0 4vw;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-top: 0;
+}
+.accordion-content p{
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding: 2vh 0;
+}
+.accordion{
     border: 1px solid rgba(0,0,0,0.15);
     margin: 10px 0;
 }
-.faq.active {
+.accordion.active {
     border: none;
 }
