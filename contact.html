@@ -1,14 +1,20 @@
+<!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <title>Vamp</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Frequently Asked Questions</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Vamp</title>
-        <meta name="viewport" content="width=device-width">
-        <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-      <nav class="header">
+<body>
+    <nav class="header">
         <div class="logo">VAMP</div>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -16,12 +22,76 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="contact.html">Help</a></li>
         </ul>
+    </nav>
+    <div class="wrapper">
+        <h1>Frequently Asked Questions</h1>
+    
+    <div class="faq">
+        <button class="accordion">
+            Question 1
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+            response 1
+            </p>
         </div>
-      </nav>
-    </body>
+    </div>
 
-    <footer>
+    <div class="faq">
+        <button class="accordion">
+            Question 2
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                response 2
+            </p>
+        </div>
+    </div>
+    <div class="faq">
+      <button class="accordion">
+          Question 3
+          <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+          <p>
+              response 3
+          </p>
+      </div>
+  </div>
+  <div class="faq">
+    <button class="accordion">
+        Question 4
+        <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+        <p>
+            response 4
+        </p>
+    </div>
+</div>
 
-    </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
 
 </html>
