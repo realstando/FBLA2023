@@ -110,5 +110,7 @@ a {
 }
 .accordion-content {
     padding: 0 15px;
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
