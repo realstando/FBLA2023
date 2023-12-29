@@ -83,9 +83,6 @@ a {
     text-align: center;
     margin-bottom: 40px;
 }
-.accordion {
-    margin-bottom: 30px;
-}
 .accordion.active .accordion-content {
     display: block;
 }
