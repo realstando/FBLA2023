@@ -105,12 +105,13 @@ a {
     font-size:2rem;
     width:100%;
     padding: 2rem 2.5rem;
-    border: none;
+    border: 3px solid rgba(0,0,0,0.15);
     outline: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+    transition: 0.4s;
 }
 .accordion-heading i{
     font-size: 1.8rem;
@@ -119,18 +120,20 @@ a {
 .accordion.active .accordion-heading i {
     transform: rotate(180deg);
 }
-.active,
 .accordion-heading:hover {
     background-color: #f1f7f5;
 }
-
+.accordion.active .accordion-content {
+    border: 3px solid rgba(0,0,0,0.15);
+    border-top: 0;
+}
 .accordion-content {
     padding: 0 4vw;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    border-top: 0;
+    border: none;
 }
 .accordion-content p{
     color: black;
@@ -139,6 +142,6 @@ a {
     padding: 2vh 0;
 }
 .accordion{
-    border: 1px solid rgba(0,0,0,0.15);
+    border: 3px solid rgba(0,0,0,0.15);
     margin: 10px 0;
 }
