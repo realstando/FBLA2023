@@ -1,67 +1,95 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
     margin: 0;
-    padding: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
 }
 
-h1 {
-    font-size: 10vh;
+body {
+    margin: 0;
 }
-h2 {
-    font-size: 8vh;
-}
-h3 {
-    font-size: 6vh;
-}
-p {
-    font-size: 4vh;
-}
-
-header {
-    width: 100%;
-    height: 12vh;
-    background-color: #333333; /* Dark Gray */
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-nav {
+.wrapper{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
+    justify-content: center;
+    align-items:center;
+   
 }
-nav ul {
-    text-align: right;
-}
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 25px;
-}
-a {
-    text-decoration: none;
-    color: #EAEAEA; /* Light Gray */
-    font-size: 22px;
-}
-.logo {
-    color: #EAEAEA; /* Light Gray */
-    font-size: 3rem;
-    font-weight: bold;
-}
-
 .top-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #8f8f74;
 }
+.nav{
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39,1), transparent);
+    z-index: 100;
+}
+.nav-logo p{
+    color:white;
+    font-size: 25px;
+    font-weight:600;
+}
+.nav-menu ul{
+    display: flex
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding: 15px;
+    margin: 0 25px;
+    
+}
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255,255,255,0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn:hover{
+    background: rgba(255,255,255, 0.7);
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: rgba(255,255,255, 0.7);
+}
+.nav-menu-btn{
+    display: none
+}
+  
+.top-section {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8f8f74;
+    
+}
 .top-text {
     margin-left: 5vw;
 }
 .top-image {
-    height: 88vh;
+    height: 100vh;
     width: auto;
 }
 
