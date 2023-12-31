@@ -1,0 +1,66 @@
+<html lang="en">
+
+
+  <head>
+      <meta charset="utf-8">
+      <title>Vamp</title>
+      <meta name="viewport" content="width=device-width">
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-logo">
+          <p>VAMP</p>
+        </div>
+        <div class="nav-menu"> 
+          <ul>
+            <li><a href='index.html' class="link">Home</a></li>
+            <li><a href='apply.html' class="link">Apply</a></li>
+            <li><a href='contact.html' class="link">Help</a></li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <a href="login.html"><button class="btn white-btn" id="loginBtn">Sign In</button></a>
+          <a href="signup.html"><button class="btn" id="registerBtn">Register</button></a>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="signup-box">
+        <h1>Signup</h1>
+    
+        <form action="signup-process.php" method="post" id="signup" novalidate>
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="name" name="name" placeholder="Name">
+          </div>
+          
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" name="email" placeholder="Email">
+          </div>
+          
+          <div>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" name="password" placeholder="Password">
+          </div>
+          
+          <div>
+            <i class="fa-solid fa-user-lock"></i>
+            <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Repeat Password">
+          </div>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </main>
+    
+  </body>
+</html>
