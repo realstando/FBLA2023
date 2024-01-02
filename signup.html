@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -9,6 +10,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script type="module" src="auth.js"></script>
   </head>
   <body>
     <header>
@@ -24,8 +26,9 @@
           </ul>
         </div>
         <div class="nav-button">
-          <a href="login.html"><button class="btn white-btn" id="loginBtn">Sign In</button></a>
-          <a href="signup.html"><button class="btn" id="registerBtn">Register</button></a>
+          <a href="login.html"><button class="btn white-btn logged-out" id="loginBtn">Sign In</button></a>
+          <a href="signup.html"><button class="btn logged-out" id="registerBtn">Register</button></a>
+          <a href=""><button class="btn white-btn logged-in">Account</button></a>
         </div>
         <div class="nav-menu-btn">
           <i class="bx bx-menu"></i>
@@ -34,10 +37,10 @@
     </header>
 
     <main>
-      <div class="signup-box">
-        <h1>Signup</h1>
+      <div class="form-box">
+        <h1>Register</h1>
     
-        <formid="signup" novalidate>
+        <form class="form" id="signup-form">
           <div>
             <i class="fa-solid fa-user"></i>
             <input type="text" id="name" name="name" placeholder="Name">
@@ -62,32 +65,7 @@
       </div>
     </main>
     
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
-    <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyDJjjtXM1C_BvfAEem1mbDUQ3ujUOAiIoo",
-        authDomain: "fbla2023-80e98.firebaseapp.com",
-        databaseURL: "https://fbla2023-80e98-default-rtdb.firebaseio.com",
-        projectId: "fbla2023-80e98",
-        storageBucket: "fbla2023-80e98.appspot.com",
-        messagingSenderId: "686848203670",
-        appId: "1:686848203670:web:6394cb438eca21fe0e5bb7",
-        measurementId: "G-8END03QN9K"
-      };
-      firebase.initializeApp(firebaseConfig);
-    
-      // Initialize Firebase
-      const auth = firebase.auth();
-      const db = firebase.firestore();
-
-      // update firestore settings
-      db.settings({ timestampsInSnapshots: true });
-    </script>
-    <script src="auth.js"></script>
+    <script type="module" src="auth.js"></script>
 
   </body>
 </html>

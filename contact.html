@@ -27,9 +27,10 @@
             </ul>
           </div>
           <div class="nav-button">
-            <a href="login.html"><button class="btn white-btn" id="loginBtn">Sign In</button></a>
-            <a href="signup.html"><button class="btn" id="registerBtn">Register</button></a>
-          </div>
+            <a href="login.html"><button class="btn white-btn logged-out" id="loginBtn">Sign In</button></a>
+            <a href="signup.html"><button class="btn logged-out" id="registerBtn">Register</button></a>
+            <a href=""><button class="btn white-btn logged-in">Account</button></a>
+        </div>
           <div class="nav-menu-btn">
             <i class="bx bx-menu"></i>
           </div>  
@@ -38,53 +39,53 @@
     <div class="wrapper">
         <h1>Frequently Asked Questions</h1>
     
-    <div class="accordion">
+        <div class="accordion">
+            <button class="accordion-heading">
+                Question 1
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>
+                response 1
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
+            <button class="accordion-heading">
+                Question 2
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>
+                    response 2
+                </p>
+            </div>
+        </div>
+        <div class="accordion">
         <button class="accordion-heading">
-            Question 1
+            Question 3
             <i class="fa-solid fa-chevron-down"></i>
         </button>
         <div class="accordion-content">
             <p>
-            response 1
+                response 3
             </p>
         </div>
-    </div>
-
-    <div class="accordion">
-        <button class="accordion-heading">
-            Question 2
-            <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="accordion-content">
-            <p>
-                response 2
-            </p>
+        </div>
+        <div class="accordion">
+            <button class="accordion-heading">
+                Question 4
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+                <p>
+                    response 4
+                </p>
+            </div>
         </div>
     </div>
-    <div class="accordion">
-      <button class="accordion-heading">
-          Question 3
-          <i class="fa-solid fa-chevron-down"></i>
-      </button>
-      <div class="accordion-content">
-          <p>
-              response 3
-          </p>
-      </div>
-  </div>
-  <div class="accordion">
-    <button class="accordion-heading">
-        Question 4
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-    <div class="accordion-content">
-        <p>
-            response 4
-        </p>
-    </div>
-</div>
-
     <script src="main.js"></script>
+    <script type="module" src="auth.js"></script>
 </body>
 
 </html>

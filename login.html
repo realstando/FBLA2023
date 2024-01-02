@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -24,8 +25,9 @@
           </ul>
         </div>
         <div class="nav-button">
-          <a href="login.html"><button class="btn white-btn" id="loginBtn">Sign In</button></a>
-          <a href="signup.html"><button class="btn" id="registerBtn">Register</button></a>
+          <a href="login.html"><button class="btn white-btn logged-out" id="loginBtn">Sign In</button></a>
+          <a href="signup.html"><button class="btn logged-out" id="registerBtn">Register</button></a>
+          <a href=""><button class="btn white-btn logged-in">Account</button></a>
         </div>
         <div class="nav-menu-btn">
           <i class="bx bx-menu"></i>
@@ -34,15 +36,10 @@
     </header>
 
     <main>
-      <div class="signup-box">
-        <h1>Signup</h1>
+      <div class="form-box">
+        <h1>Sign In</h1>
     
-        <formid="signup" novalidate>
-          <div>
-            <i class="fa-solid fa-user"></i>
-            <input type="text" id="name" name="name" placeholder="Name">
-          </div>
-          
+        <form class="form" id="login-form">
           <div>
             <i class="fa-solid fa-envelope"></i>
             <input type="email" id="email" name="email" placeholder="Email">
@@ -52,14 +49,10 @@
             <i class="fa-solid fa-lock"></i>
             <input type="password" id="password" name="password" placeholder="Password">
           </div>
-          
-          <div>
-            <i class="fa-solid fa-user-lock"></i>
-            <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Repeat Password">
-          </div>
-          <button type="submit">Register</button>
+          <button type="submit">Sign In</button>
         </form>
       </div>
     </main>
+    <script type="module" src="auth.js"></script>
   </body>
 </html>
