@@ -52,6 +52,14 @@ if (loginForm) {
     });
 }
 
+const logout = document.querySelector('#signout-btn');
+logout.addEventListener('click', (e) => {
+    e.preventDefault();
+    auth.signOut().then(() => {
+        console.log('user signed out');
+    })
+});
+
 const loggedOutLinks = document.querySelectorAll('.logged-out');
 const loggedInLinks = document.querySelectorAll('.logged-in');
 onAuthStateChanged(auth, user => {
