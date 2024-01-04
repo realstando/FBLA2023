@@ -90,11 +90,15 @@ nav{
 
 
 .main-desc {
-    margin: 75px auto;
+    margin: 6.5vh auto;
     text-align: center;
 }
 .main-desc h1 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-size: 3.7rem;
+}
+.main-desc p {
+    font-size: 1.5rem;
 }
 
 
