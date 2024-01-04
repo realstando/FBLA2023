@@ -2,17 +2,22 @@
 <html lang="en">
 
   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Vamp | Home</title>
-      <meta name="viewport" content="width=device-width">
-      <link href="style.css" rel="stylesheet" type="text/css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vamp | Home</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
+
   <body>
+
     <header>
+
       <nav class="nav">
         <div class="nav-logo">
           <p>VAMP</p>
@@ -24,6 +29,7 @@
             <li><a href='contact.html' class="link">Help</a></li>
           </ul>
         </div>
+
         <div class="nav-button">
           <a href="login.html"><button class="btn white-btn logged-out" id="loginBtn" style="display: none;">Sign In</button></a>
           <a href="signup.html"><button class="btn logged-out" id="registerBtn" style="display: none;">Register</button></a>
@@ -34,9 +40,11 @@
           <i class="bx bx-menu"></i>
         </div>  
       </nav>
+
     </header>
 
     <main> 
+
       <div class="video-container">
         <video src="final video.mp4" width="100%" height="auto" opacity = 0.2 autoplay muted loop></video>
         <div class="text-overlay">
@@ -50,44 +58,21 @@
         <p>description here</p>
       </section>
 
-      <section class="job-desc">
-        <h1>Available Jobs</h1>
-        <div class="accordion">
-          <button class="accordion-heading">
-            job 1
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="accordion-content">
-            <p>
-              description
-            </p>
-          </div>
+      <section id="desc">
+        <div class="main-desc">
+          <h1>Why Vamp?</h1>
+          <p>yapfest here</p>
         </div>
-        <div class="accordion">
-          <button class="accordion-heading">
-            job 2
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="accordion-content">
-            <p>
-              description
-            </p>
-          </div>
-        </div>
-        <div class="accordion">
-          <button class="accordion-heading">
-            job 3
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="accordion-content">
-            <p>
-              description
-            </p>
-          </div>
-        </div>
-      <script src="main.js"></script>
-      <script type="module" src="auth.js"></script>
+      </section>
+
+      <section id="apply-sect">
+        <h1>Apply Here</h1>
+      </section>
     </main>
+
+    <script src="main.js"></script>
+    <script type="module" src="auth.js"></script>
+    
   </body>
 
   <footer>
