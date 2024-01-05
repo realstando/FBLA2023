@@ -31,7 +31,7 @@ nav{
 }
 .nav-logo p{
     color:white;
-    font-size: 25px;
+    font-size: 2.3rem;
     font-weight:600;
 }
 .nav-menu ul{
@@ -240,7 +240,7 @@ video {
     text-align: center;
     width: 90%;
     max-width: 450px;
-    position: absolute;
+    position: sticky;
     left: 50%;
     transform: translateX(-50%);
     padding: 5vh 8vh;
@@ -331,16 +331,17 @@ video {
     cursor: pointer;
 }
 .apply-modal button {
-    width: 20vh;
+    width: 25%;
     background: darkgrey;
     color: #fff;
-    height: 40px;
+    height: 45px;
     border-radius: 20px;
     border: 0;
     outline: 0;
     cursor: pointer;
     display: block;
     margin: 5vh auto 0;
+    font-size: 1.3rem;
 }
 .apply-modal form input[type=text] {
 	display: block;
@@ -349,6 +350,7 @@ video {
 	padding: 5px 8px;
 	margin: 1vh 0 3vh;
 	font-size: 0.7em;
+    width: 15vw;
 }
 .apply-form {
 	margin-left: 3vw;
@@ -364,14 +366,8 @@ video {
 #email, #phone-number {
 	width: 20vw;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: #fcfcfc;
-}
+
+
 footer{
     background: #111;
     height: auto;
