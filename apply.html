@@ -49,6 +49,7 @@
             <p>
               description
             </p>
+            <a><button class="btn white-btn">Apply for Job 1</button></a>
           </div>
         </div>
         <div class="accordion">
@@ -60,6 +61,7 @@
             <p>
               description
             </p>
+            <a><button class="btn white-btn">Apply for Job 2</button></a>
           </div>
         </div>
         <div class="accordion">
@@ -71,11 +73,47 @@
             <p>
               description
             </p>
+            <a><button class="btn white-btn">Apply for Job 3</button></a>
           </div>
         </div>
       </section>
 
+      <section class="modal">
+        <div class="apply-modal">
+          <span class="close">&times;</span>
+          <h1>application form for job</h1>
+          <form class="apply-form">
+            <div>
+              <label for="firstname">First Name: </label>
+              <input type="text" id="firstname">
+            </div>
+            <div>
+              <label for="lastname">Last Name: </label>
+              <input type="text" id="lastname">
+            </div>
+            <div>
+              <label for="age">Age: </label>
+              <input type="text" id="age">
+            </div>
+            <div>
+              <label for="phone-number">Phone Number: </label>
+              <input type="text" id="phone-number">
+            </div>
+            <div>
+              <label for="email">Email: </label>
+              <input type="text" id="email">
+            </div>
+            <div>
+              <label for="address">Address: </label>
+              <input type="text" id="address">
+            </div>
+            <button type="submit">Submit Application</button>
+          </form>
+        </div>
+      </section>
+
     </main>
+    <script src="main.js"></script>
     <script type="module" src="auth.js"></script>
   </body>
 
