@@ -106,11 +106,17 @@ video {
 
 }
 .bottom {
-    background: #4a4848; /* Choose your desired background color */
+    background: #4a4339; 
     color: #fff;
-    padding: 20px; /* You can adjust the padding as needed */
-    box-sizing: border-box; /* Make sure padding is included in the height */
+    padding: 20px; 
+    box-sizing: border-box;
     height: calc(100vh - 100px);
+}
+
+.bottom h1 {
+    font-family: "Guardian-EgypTT","Charter","Charter Bitstream","Cambria","Noto Serif Light","Droid Serif","Georgia","serif";
+    font-weight: 300;
+    font-size: 42px;
 }
 
 
@@ -275,4 +281,76 @@ input {
     outline: 0;
     cursor: pointer;
     transition: background 1s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fcfcfc;
+}
+footer{
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 10px;
+    font-size: 14px;
+}
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: aqua
+}
+.footer-bottom{
+    background: #000;
+    width:100vw;
+    padding: 20px 0;
+    text-align:center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }
