@@ -106,7 +106,7 @@ video {
 
 }
 .bottom {
-    background: #4a4339; 
+    background: #60574a; 
     color: #fff;
     padding: 20px; 
     box-sizing: border-box;
@@ -293,7 +293,7 @@ body{
 footer{
     background: #111;
     height: auto;
-    width: 100vw;
+    width: 100%;
     font-family: "Open Sans";
     padding-top: 40px;
     color: #fff;
@@ -312,7 +312,7 @@ footer{
     line-height: 3rem;
 }
 .footer-content p{
-    max-width: 500px;
+    max-width: 450px;
     margin: 10px auto;
     line-height: 10px;
     font-size: 14px;
