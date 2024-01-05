@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
 *{
     margin: 0;
     padding:0;
@@ -7,6 +9,8 @@
 }
 body {
     position: relative;
+    margin: 0;
+    padding:0;
 }
 
 header{
@@ -78,6 +82,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     background-color: #32322f;
+    padding: 10px;
 }
 .top-text {
     margin-left: 5vw;
@@ -87,14 +92,25 @@ nav{
 .video-container {
     position: relative;
     overflow: hidden;
+    height:100vh;
+    margin-top: -10px;
+    background: #333;
 }
 
 video {
     width: 100vw;
-    height: auto;
+    height: 100vh;
     object-fit: fill;
     z-index: -1;
     display: block;
+
+}
+.bottom {
+    background: #4a4848; /* Choose your desired background color */
+    color: #fff;
+    padding: 20px; /* You can adjust the padding as needed */
+    box-sizing: border-box; /* Make sure padding is included in the height */
+    height: calc(100vh - 100px);
 }
 
 
@@ -105,12 +121,13 @@ video {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    width: 80%; /* Adjust the width as needed */
+    width: 80%; 
+    margin-bottom: 0;
 }
 
 .text-overlay h1 {
     font-size: 2em;
-    margin: 0; /* Remove default margin for better positioning */
+    margin: 0;
 }
 
 
