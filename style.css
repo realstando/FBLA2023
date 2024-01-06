@@ -152,7 +152,6 @@ video {
 
 .main-desc {
     position: relative;
-    
     margin-top: 0px; /* effects the spacing between why should apply and subheadings*/
 }
 
@@ -169,7 +168,6 @@ video {
 }
 
 .what-we-are-looking-for {
-    font-family: "Guardian-EgypTT", "Charter", "Charter Bitstream", "Cambria", "Noto Serif Light", "Droid Serif", "Georgia", "serif";
     text-align: right;
     margin-right: 20px;
     position: relative;
@@ -229,11 +227,7 @@ video {
     margin: 0px;
 }
 
-.job-desc, .admin {
-    max-width: 1250px;
-    margin: 20px auto;
-}
-.job-desc h1, .admin h1 {
+.job-desc h1, .admin h1, .wrapper h1 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 3rem;
@@ -244,18 +238,12 @@ video {
     font-size: 3rem;
 }
 
-.wrapper {
+.wrapper, .job-desc, .admin {
     padding: 0;
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-width: 75%;
-    margin: auto;
-}
-
-.wrapper > h1 {
-    margin: 1.2rem 0;
-    text-align: center;
-    letter-spacing: 3px;
+    margin: 20px auto 10vh;
 }
 
 .accordion-heading {
@@ -271,7 +259,6 @@ video {
     justify-content: space-between;
     align-items: center;
     transition: 0.4s;
-    font-family: 'Poppins', sans-serif;
 }
 
 .accordion-heading i {
@@ -314,7 +301,8 @@ video {
 }
 
 .accordion-content .btn {
-    background-color: #32322f;
+    background-color: darkgray;
+    color: #fff;
     height: 3.5rem;
     width: 18vw;
     font-size: 1.5rem;

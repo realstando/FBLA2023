@@ -128,7 +128,6 @@ if (applyForm) {
         other: applyForm.other.value, 
         id: applyForm.id
     }).then(() => {
-        // close the apply modal & reset form
         const modal = document.querySelector('.modal');
             modal.style.display = 'none';
         applyForm.reset();
