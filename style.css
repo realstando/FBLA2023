@@ -1,27 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 body {
     position: relative;
     margin: 0;
-    padding:0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 100;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -29,53 +33,65 @@ nav{
     line-height: 100px;
     background: rgb(71, 60, 60);
 }
-.nav-logo p{
-    color:white;
+
+.nav-logo p {
+    color: white;
     font-size: 2.3rem;
-    font-weight:600;
+    font-weight: 600;
 }
-.nav-menu ul{
-    display: flex
+
+.nav-menu ul {
+    display: flex;
 }
-.nav-menu ul li{
+
+.nav-menu ul li {
     list-style-type: none;
 }
-.nav-menu ul li .link{
+
+.nav-menu ul li .link {
     text-decoration: none;
     font-weight: 500;
     color: #fff;
     padding: 15px;
     margin: 0 25px;
 }
-.link:hover, .active{
+
+.link:hover,
+.active {
     border-bottom: 2px solid #fff;
 }
-.btn{
+
+.btn {
     width: 130px;
     height: 40px;
     font-weight: 500;
-    background: rgba(255,255,255, 0.7);
+    background: rgba(255, 255, 255, 0.7);
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
-.btn:hover{
-    background: rgba(255,255,255, 0.7);
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.7);
 }
-#registerBtn{
+
+#registerBtn {
     margin-left: 15px;
 }
+
 #signout-btn {
     margin-left: 15px;
 }
-.btn.white-btn{
-    background: rgba(255,255,255, 0.7);
+
+.btn.white-btn {
+    background: rgba(255, 255, 255, 0.7);
 }
-.nav-menu-btn{
+
+.nav-menu-btn {
     display: none;
 }
-  
+
 .top-section {
     margin: 0;
     display: flex;
@@ -84,15 +100,15 @@ nav{
     background-color: #32322f;
     padding: 10px;
 }
+
 .top-text {
     margin-left: 5vw;
 }
 
-
 .video-container {
     position: relative;
     overflow: hidden;
-    height:100vh;
+    height: 100vh;
     margin-top: -10px;
     background: #333;
 }
@@ -103,22 +119,22 @@ video {
     object-fit: fill;
     z-index: -1;
     display: block;
-
 }
+
 .bottom {
-    background: #60574a; 
+    background: #6b5c4c;
     color: #fff;
-    padding: 20px; 
+    padding: 20px;
     box-sizing: border-box;
-    height: calc(100vh - 100px);
+    height: calc(300vh - 300px); /* effects size of background */
 }
 
 .bottom h1 {
-    font-family: "Guardian-EgypTT","Charter","Charter Bitstream","Cambria","Noto Serif Light","Droid Serif","Georgia","serif";
+    font-family: "Guardian-EgypTT", "Charter", "Charter Bitstream", "Cambria", "Noto Serif Light", "Droid Serif", "Georgia", "serif";
     font-weight: 300;
     font-size: 42px;
+   
 }
-
 
 .text-overlay {
     position: absolute;
@@ -127,28 +143,93 @@ video {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    width: 80%; 
+    width: 80%;
     margin-bottom: 0;
 }
 
 .text-overlay h1 {
     font-size: 2em;
-    margin: 0;
+    margin: 5px;
 }
-
 
 .main-desc {
-    margin: 6.5vh auto;
-    text-align: center;
+    position: relative;
+    
+    margin-top: 0px; /* effects the spacing between why should apply and subheadings*/
 }
+
+
+.main-desc .right-aligned {
+    float: right; /* Move the image to the right */
+    margin-right: 50px; /* Add some margin for spacing */
+    position: 100px;
+}
+.main-desc .left-aligned {
+    float: left; /* Move the image to the right */
+    margin-left: 50px; /* Add some margin for spacing */
+    position: 100px;
+}
+
+.what-we-are-looking-for {
+    font-family: "Guardian-EgypTT", "Charter", "Charter Bitstream", "Cambria", "Noto Serif Light", "Droid Serif", "Georgia", "serif";
+    text-align: right;
+    margin-right: 20px;
+    position: relative;
+    top: -90px;
+}
+
+.why-apply-section .subheading {
+    margin-top: 100px;
+}
+
+.why-apply-section {
+    margin-top: 10px; /* effects the spacing between why apply and text of what we looking for */
+    text-align: center;
+    margin-left: 0px;
+}
+
+.what-we-are-looking-for {
+    margin-top: 200px;
+}
+
+.subheadings {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px; /* effects spacing for all subheadings */
+
+}
+
+.subheading {
+    width: 40%;
+    box-sizing: border-box;
+    min-height: 20px; /* margin gap between the subheading and main heading */
+}
+
+.subheading h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px; /* margin gap between the subheading and its content */
+}
+
+.subheading p {
+    font-size: 1rem;
+}
+
 .main-desc h1 {
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px; /* effects how close or far text away is from each other (everything on bottom homepage) */
     font-size: 3.5rem;
+    margin-left: 200px;
+}
+#desc h1 {
+    margin-left: 0;
 }
 .main-desc p {
     font-size: 1.3rem;
 }
 
+.main-desc h2 {
+    margin: 0px;
+}
 
 .job-desc, .admin {
     max-width: 1250px;
@@ -166,12 +247,13 @@ video {
 }
 
 .wrapper {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-width: 75%;
     margin: auto;
 }
+
 .wrapper > h1 {
     margin: 1.2rem 0;
     text-align: center;
@@ -179,33 +261,40 @@ video {
 }
 
 .accordion-heading {
-    background-color:white;
-    color:black;
+    background-color: white;
+    color: black;
     cursor: pointer;
-    font-size:2rem;
-    width:100%;
+    font-size: 2rem;
+    width: 100%;
     padding: 2rem 2.5rem;
     border: none;
     outline: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: bold;
     transition: 0.4s;
+    font-family: 'Poppins', sans-serif; /* Add this line to set the font */
 }
-.accordion-heading i{
+
+/* Add the following lines to style the chevron icon */
+.accordion-heading i {
     font-size: 1.8rem;
     transition: 0.4s;
+    font-family: 'Poppins', sans-serif;
 }
+
 .accordion.active .accordion-heading i {
     transform: rotate(180deg);
 }
+
 .accordion-heading:hover {
     background-color: #f1f7f5;
 }
+
 .accordion.active .accordion-content {
     border-top: 1.5px solid gray;
 }
+
 .accordion-content {
     padding: 0 4vw;
     background-color: white;
@@ -227,12 +316,14 @@ video {
     border: 3px solid black;
     margin: 10px 0;
 }
+
 .accordion-content .btn {
     background-color: #32322f;
     height: 3.5rem;
     width: 18vw;
     font-size: 1.5rem;
 }
+
 .accordion-content :is(a) {
     display: flex;
     justify-content: center;
@@ -248,11 +339,13 @@ video {
     transform: translateX(-50%);
     padding: 5vh 8vh;
 }
+
 .form-box h1 {
     font-size: 3.5rem;
     margin-bottom: 60px;
     position: relative;
 }
+
 .form-box h1::after {
     content: '';
     width: 30px;
@@ -264,20 +357,24 @@ video {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .form {
     height: 280px;
 }
-.form div{
+
+.form div {
     background: #eaeaea;
     margin: 15px 0;
     border-radius: 3px;
     display: flex;
     align-items: center;
 }
+
 .form div i {
     margin-left: 15px;
     color: #9999;
 }
+
 .form input {
     width: 100%;
     background: transparent;
@@ -285,6 +382,7 @@ video {
     outline: 0;
     padding: 18px 15px;
 }
+
 .form button {
     width: 50%;
     background: darkgrey;
@@ -306,9 +404,10 @@ video {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
+
 .apply-modal {
     background-color: #fefefe;
     margin: auto;
@@ -316,11 +415,13 @@ video {
     border: 1px solid #888;
     width: 80%;
 }
+
 .apply-modal h1 {
     text-align: center;
     font-size: 2rem;
     margin: 5vh 0;
 }
+
 .close {
     color: #aaaaaa;
     float: right;
@@ -328,12 +429,14 @@ video {
     font-size: 3rem;
     font-weight: bold;
 }
+
 .close:hover,
 .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
+
 .apply-modal button {
     width: 25%;
     background: darkgrey;
@@ -356,13 +459,15 @@ video {
 	font-size: 0.7em;
     width: 15vw;
 }
+
 .apply-form {
-	margin-left: 3vw;
-	font-size: 1.3rem;
+    margin-left: 3vw;
+    font-size: 1.3rem;
 }
+
 .apply-form div {
-	display: inline-block;
-	margin-right: 10%;
+    display: inline-block;
+    margin-right: 10%;
 }
 .apply-form div:has(textarea) {
 	display: block;
@@ -374,12 +479,14 @@ video {
 #address, #availability {
 	width: 25vw;
 }
-#email, #phone-number {
-	width: 20vw;
+
+#email,
+#phone-number {
+    width: 20vw;
 }
 
-
-footer{
+footer {
+    margin-top: auto;
     background: #111;
     height: auto;
     width: 100%;
@@ -387,25 +494,29 @@ footer{
     padding-top: 40px;
     color: #fff;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-.footer-content h3{
+
+.footer-content h3 {
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
 }
-.footer-content p{
+
+.footer-content p {
     max-width: 450px;
     margin: 10px auto;
     line-height: 10px;
     font-size: 14px;
 }
+
 .socials {
     list-style: none;
     display: flex;
@@ -413,35 +524,50 @@ footer{
     justify-content: center;
     margin: 1rem 0 3rem 0;
 }
-.socials li{
+
+.socials li {
     margin: 0 10px;
 }
-.socials a{
+
+.socials a {
     text-decoration: none;
     color: #fff;
 }
-.socials a i{
+
+.socials a i {
     font-size: 1.1rem;
-    transition: color .4s ease;
+    transition: color 0.4s ease;
 }
-.socials a:hover i{
+
+.socials a:hover i {
     color: aqua
 }
-.footer-bottom{
+
+.footer-bottom {
     background: #000;
-    width:100vw;
+    width: 100vw;
     padding: 20px 0;
-    text-align:center;
+    text-align: center;
 }
-.footer-bottom p{
+
+.footer-bottom p {
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
-.footer-bottom span{
+
+.footer-bottom span {
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
+}
+
+.section-divider {
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    margin: 100px auto;
+    display: block;
 }
 main:has(.admin) {
     margin-bottom: 25vh;
