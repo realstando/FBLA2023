@@ -13,6 +13,7 @@
         };
     });
 }
+accordionLoad();
 
 let applyBtn = document.querySelectorAll(".accordion .btn");
 const applyH = document.querySelector(".apply-modal h1");

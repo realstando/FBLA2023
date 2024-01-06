@@ -126,14 +126,12 @@ video {
     color: #fff;
     padding: 20px;
     box-sizing: border-box;
-    height: calc(300vh - 300px); /* effects size of background */
 }
 
 .bottom h1 {
     font-family: "Guardian-EgypTT", "Charter", "Charter Bitstream", "Cambria", "Noto Serif Light", "Droid Serif", "Georgia", "serif";
     font-weight: 300;
     font-size: 42px;
-   
 }
 
 .text-overlay {
@@ -273,14 +271,12 @@ video {
     justify-content: space-between;
     align-items: center;
     transition: 0.4s;
-    font-family: 'Poppins', sans-serif; /* Add this line to set the font */
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Add the following lines to style the chevron icon */
 .accordion-heading i {
     font-size: 1.8rem;
     transition: 0.4s;
-    font-family: 'Poppins', sans-serif;
 }
 
 .accordion.active .accordion-heading i {
