@@ -145,6 +145,7 @@ video {
     margin-top: 0px; /* effects the spacing between why should apply and subheadings*/
 }
 .what-we-are-looking-for {
+    font-family: "Guardian-EgypTT","Charter","Charter Bitstream","Cambria","Noto Serif Light","Droid Serif","Georgia","serif";
     position: relative;
     top: -90px;
 }
@@ -170,7 +171,7 @@ video {
 .subheading {
     width: 40%; 
     box-sizing: border-box;
-    min-height: 40px; /* margin gap between the subheading and main heading */
+    min-height: 20px; /* margin gap between the subheading and main heading */
 }
 
 .subheading.left {
