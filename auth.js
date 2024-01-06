@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { getFirestore, collection, doc, setDoc, addDoc, onSnapshot, query } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -54,20 +54,86 @@ if (loginForm) {
 
 const logout = document.querySelector('#signout-btn');
 logout.addEventListener('click', (e) => {
-    e.preventDefault();
     auth.signOut().then(() => {
         console.log('user signed out');
     })
 });
 
+const collectionRef = collection(db, 'user');
 const loggedOutLinks = document.querySelectorAll('.logged-out');
 const loggedInLinks = document.querySelectorAll('.logged-in');
+const accountBtn = document.querySelector('#accountBtn');
+const admin = document.querySelector(".admin");
+const q = query(collection(db, "user"));
 onAuthStateChanged(auth, user => {
     if (user) {
         loggedInLinks.forEach(item => item.style.display = 'inline-block');
         loggedOutLinks.forEach(item => item.style.display = 'none');
+        accountBtn.style.display = 'inline-block';
+            if (auth.currentUser.email === 'rryanwwang@gmail.com' || auth.currentUser.email === 'pratyushpat08@gmail.com') {
+                accountBtn.style.display = 'inline-block';
+                onSnapshot(q, (data) => {
+                    if (data && admin) {
+                        let html = '<h1>All Applications</h1>';
+                        data.forEach(doc => {
+                            const adminData = doc.data();
+                            const adminHtml = `
+                                <div class="accordion">
+                                    <button class="accordion-heading">
+                                        ${adminData.id} - ${adminData.fname} ${adminData.lname}
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <div><h2 style='display: inline-block; padding-top: 2vh;'>Age: </h2><p style='display: inline-block; margin-left: 0.5vw;'> ${adminData.age}</p></div> 
+                                        <div><h2 style='display: inline-block;'>Email: </h2><p style='display: inline-block; margin-left: 0.5vw;'> ${adminData.email}</p></div> 
+                                        <div><h2 style='display: inline-block;'>Phone Number: </h2><p style='display: inline-block; margin-left: 0.5vw;'> ${adminData.phoneNumber}</p></div> 
+                                        <div><h2 style='display: inline-block;'>Address: </h2><p style='display: inline-block; margin-left: 0.5vw;'> ${adminData.address}</p></div> 
+                                        <div><h2 style='display: inline-block;'>Available Hours: </h2><p style='display: inline-block; margin-left: 0.5vw;'> ${adminData.ava}</p></div> 
+                                        <h2>Job Experience: </h2><p>${adminData.exp}</p> 
+                                        <h2>Education Background: </h2><p>${adminData.edu}</p> 
+                                        <h2>Reason for Applying: </h2><p>${adminData.reason}</p>
+                                        <h2>Other Information: </h2><p>${adminData.other}</p>
+                                    </div>
+                                </div>
+                            `;
+                            html += adminHtml;
+                        });
+                        admin.innerHTML = html;
+                    };
+                    accordionLoad();
+                })
+            }
     } else {
         loggedInLinks.forEach(item => item.style.display = 'none');
         loggedOutLinks.forEach(item => item.style.display = 'inline-block');
+        accountBtn.style.display = 'none';
     }
 })
+
+const applyForm = document.querySelector('.apply-form');
+if (applyForm) {
+    applyForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    await addDoc(collectionRef, {
+        fname: applyForm.firstname.value,
+        lname: applyForm.lastname.value, 
+        age: applyForm.age.value, 
+        phoneNumber: applyForm.phoneNumber.value, 
+        email: applyForm.email.value, 
+        address: applyForm.address.value, 
+        ava: applyForm.availability.value, 
+        exp: applyForm.exp.value, 
+        edu: applyForm.edu.value, 
+        reason: applyForm.reason.value, 
+        other: applyForm.other.value, 
+        id: applyForm.id
+    }).then(() => {
+        // close the apply modal & reset form
+        const modal = document.querySelector('.modal');
+            modal.style.display = 'none';
+        applyForm.reset();
+    }).catch(err => {
+        console.log(err.message);
+    });
+    });
+}

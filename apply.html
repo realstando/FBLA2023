@@ -6,6 +6,9 @@
     <title> Vamp | Apply</title>
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
@@ -27,7 +30,7 @@
         <div class="nav-button">
           <a href="login.html"><button class="btn white-btn logged-out" id="loginBtn" style="display: none;">Sign In</button></a>
           <a href="signup.html"><button class="btn logged-out" id="registerBtn" style="display: none;">Register</button></a>
-          <a href=""><button class="btn white-btn logged-in" style="display: none;">Account</button></a>
+          <a href="account.html"><button class="btn white-btn" id='accountBtn' style="display: none;">Account</button></a>
           <a><button class="btn white-btn logged-in" id="signout-btn" style="display: none;">Sign Out</button></a>
         </div>
         <div class="nav-menu-btn">
@@ -50,7 +53,7 @@
             <p>
               description
             </p>
-            <a><button class="btn white-btn">Apply for Job 1</button></a>
+            <a><button class="btn white-btn" id="job1">Apply for Job 1</button></a>
           </div>
         </div>
         <div class="accordion">
@@ -62,7 +65,7 @@
             <p>
               description
             </p>
-            <a><button class="btn white-btn">Apply for Job 2</button></a>
+            <a><button class="btn white-btn" id="job2">Apply for Job 2</button></a>
           </div>
         </div>
         <div class="accordion">
@@ -74,7 +77,7 @@
             <p>
               description
             </p>
-            <a><button class="btn white-btn">Apply for Job 3</button></a>
+            <a><button class="btn white-btn" id="job3">Apply for Job 3</button></a>
           </div>
         </div>
       </section>
@@ -86,39 +89,47 @@
           <form class="apply-form">
             <div>
               <label for="firstname">First Name: </label>
-              <input type="text" id="firstname">
+              <input type="text" id="firstname" required>
             </div>
             <div>
               <label for="lastname">Last Name: </label>
-              <input type="text" id="lastname">
+              <input type="text" id="lastname" required>
             </div>
             <div>
               <label for="age">Age: </label>
-              <input type="text" id="age">
+              <input type="text" id="age" required>
             </div>
             <div>
-              <label for="phone-number">Phone Number: </label>
-              <input type="text" id="phone-number">
+              <label for="phoneNumber">Phone Number: </label>
+              <input type="text" id="phoneNumber" required>
             </div>
             <div>
               <label for="email">Email: </label>
-              <input type="text" id="email">
+              <input type="text" id="email" required>
             </div>
             <div>
               <label for="address">Address: </label>
-              <input type="text" id="address">
+              <input type="text" id="address" required>
             </div>
             <div>
-              <label for="exp">Experience: </label>
-              <input type="text" id="exp">
+              <label for="availability">Available Hours: </label>
+              <input type="text" id="availability" required>
             </div>
             <div>
-              <label for="exp">Experience: </label>
-              <input type="text" id="exp">
+              <label for="exp">Job Experience: </label>
+              <textarea type="text" id="exp" cols="30" rows="10" required></textarea>
             </div>
             <div>
-              <label for="exp">Experience: </label>
-              <input type="text" id="exp">
+              <label for="edu">Education Background: </label>
+              <textarea type="text" id="edu" cols="30" rows="10" required></textarea>
+            </div>
+            <div>
+              <label for="reason">Reason for Applying: </label>
+              <textarea type="text" id="reason" cols="30" rows="10" required></textarea>
+            </div>
+            <div>
+              <label for="other">Other Information: </label>
+              <textarea type="text" id="other" cols="30" rows="10"></textarea>
             </div>
             <button type="submit">Submit Application</button>
           </form>

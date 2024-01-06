@@ -150,11 +150,11 @@ video {
 }
 
 
-.job-desc {
+.job-desc, .admin {
     max-width: 1250px;
     margin: 20px auto;
 }
-.job-desc h1 {
+.job-desc h1, .admin h1 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 3rem;
@@ -214,11 +214,14 @@ video {
     transition: max-height 0.2s ease-out;
     border: none;
 }
-.accordion-content p{
+.accordion-content p {
     color: black;
     font-size: 1.5rem;
     line-height: 1.4;
     padding: 2vh 0;
+}
+.admin .accordion-content p {
+    padding: 0 0 2vh;
 }
 .accordion{
     border: 3px solid black;
@@ -294,6 +297,7 @@ video {
 }
 
 .modal {
+	display: none;
     position: fixed;
     z-index: 1;
     padding: 20vh 0 13vh; /* Location of the box */
@@ -341,9 +345,9 @@ video {
     cursor: pointer;
     display: block;
     margin: 5vh auto 0;
-    font-size: 1.3rem;
+    font-size: 0.8em;
 }
-.apply-modal form input[type=text] {
+.apply-modal form [type=text] {
 	display: block;
 	outline: none;
 	border: 1px solid #ccc;
@@ -360,7 +364,14 @@ video {
 	display: inline-block;
 	margin-right: 10%;
 }
-#address {
+.apply-form div:has(textarea) {
+	display: block;
+}
+.apply-form div textarea[type=text] {
+	resize: vertical;
+	width: 100%;
+}
+#address, #availability {
 	width: 25vw;
 }
 #email, #phone-number {
@@ -431,4 +442,7 @@ footer{
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
+}
+main:has(.admin) {
+    margin-bottom: 25vh;
 }
