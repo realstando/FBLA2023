@@ -11,6 +11,9 @@ body {
     position: relative;
     margin: 0;
     padding:0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -110,7 +113,7 @@ video {
     color: #fff;
     padding: 20px; 
     box-sizing: border-box;
-    height: calc(100vh - 100px);
+    height: calc(260vh - 260px); /* effects size of background */
 }
 
 .bottom h1 {
@@ -133,22 +136,78 @@ video {
 
 .text-overlay h1 {
     font-size: 2em;
-    margin: 0;
+    margin: 5px;
 }
-
 
 .main-desc {
-    margin: 6.5vh auto;
+    position: relative;
     text-align: center;
+    margin-top: 0px; /* effects the spacing between why should apply and subheadings*/
 }
+.what-we-are-looking-for {
+    position: relative;
+    top: -90px;
+}
+.why-apply-section .subheading {
+    margin-top: 100px;
+}
+
+
+.why-apply-section {
+    margin-top: 10px; /* effects the spacing between why apply and text of what we looking for */
+}
+
+.what-we-are-looking-for {
+    margin-top: 200px;
+}
+
+.subheadings {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;  /* effects spacing for all subheadings */
+}
+
+.subheading {
+    width: 40%; 
+    box-sizing: border-box;
+    min-height: 40px; /* margin gap between the subheading and main heading */
+}
+
+.subheading.left {
+    margin-right: 100px;
+}
+
+.subheading.center {
+    margin-left: 20px;
+}
+
+
+.subheading h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px; /* margin gap between the subheading and its content */
+}
+
+.subheading p {
+    font-size: 1rem;
+}
+
+
 .main-desc h1 {
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px; /* effects how close or far text away is from each other (everything on bottom homepage) */
     font-size: 3.5rem;
 }
 .main-desc p {
     font-size: 1.3rem;
 }
 
+.main-desc h2{
+    margin:0px;
+}
+
+.questions {
+    margin-top: 100px;
+}
 
 .job-desc {
     max-width: 1250px;
@@ -369,6 +428,7 @@ video {
 
 
 footer{
+    margin-top: auto;
     background: #111;
     height: auto;
     width: 100%;
@@ -395,6 +455,7 @@ footer{
     line-height: 10px;
     font-size: 14px;
 }
+
 .socials {
     list-style: none;
     display: flex;
@@ -432,3 +493,12 @@ footer{
     opacity: .4;
     font-weight: 200;
 }
+.section-divider {
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    margin: 60px auto;
+    display: block;
+}
+
+
