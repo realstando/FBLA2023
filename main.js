@@ -23,15 +23,15 @@ const applyId = document.querySelector('.apply-form');
 applyBtn.forEach((btn) => {
     btn.onclick = () => {
         modal.style.display = "block"
-        if (btn.id === "job1") {
-            applyH.innerHTML = "Application for Job 1";
-            applyId.id = "Job 1";
-        } else if (btn.id === "job2") {
-            applyH.innerHTML = "Application for Job 2";
-            applyId.id = "Job 2";
+        if (btn.id === "Fashion Designer") {
+            applyH.innerHTML = "Application for Fashion Designer";
+            applyId.id = "Fashion Designer";
+        } else if (btn.id === "Sales Manager") {
+            applyH.innerHTML = "Application for Sales Manager";
+            applyId.id = "Sales Manager";
         } else {
-            applyH.innerHTML = "Application for Job 3";
-            applyId.id = "Job 3";
+            applyH.innerHTML = "Application for Marketing Coordinator";
+            applyId.id = "Mkarting Coordinator";
         }
     }
 })
