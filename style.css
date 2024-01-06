@@ -200,6 +200,10 @@ video {
     box-sizing: border-box;
     min-height: 20px; /* margin gap between the subheading and main heading */
 }
+.subheading div {
+    margin: 0 5vw;
+    
+}
 
 .subheading h2 {
     font-size: 1.8rem;
