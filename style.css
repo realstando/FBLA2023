@@ -224,6 +224,15 @@ video {
 .main-desc p {
     font-size: 1.3rem;
 }
+/* ... your existing styles ... */
+
+body.apply-page {
+    background-color: #6b5c4c;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+}
+
+/* ... your existing styles ... */
 
 .main-desc h2 {
     margin: 0px;
@@ -232,11 +241,13 @@ video {
 .job-desc, .admin {
     max-width: 1250px;
     margin: 20px auto;
+    
 }
 .job-desc h1, .admin h1 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 3rem;
+    color: black;
 }
 
 #apply-sect h1 {
@@ -259,7 +270,7 @@ video {
 }
 
 .accordion-heading {
-    background-color: white;
+    background-color: rgb(181, 185, 206);
     color: black;
     cursor: pointer;
     font-size: 2rem;
@@ -284,7 +295,7 @@ video {
 }
 
 .accordion-heading:hover {
-    background-color: #f1f7f5;
+    background-color: #8c92ae;
 }
 
 .accordion.active .accordion-content {
@@ -293,7 +304,7 @@ video {
 
 .accordion-content {
     padding: 0 4vw;
-    background-color: white;
+    background-color: #bec1d3;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -314,7 +325,7 @@ video {
 }
 
 .accordion-content .btn {
-    background-color: #32322f;
+    background-color: #9591b1;
     height: 3.5rem;
     width: 18vw;
     font-size: 1.5rem;
