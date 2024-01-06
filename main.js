@@ -11,3 +11,4 @@ accordions.forEach((acco) => {
         }
     };
 });
+
