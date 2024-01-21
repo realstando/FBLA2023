@@ -12,8 +12,6 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 header {
@@ -32,6 +30,7 @@ nav {
     height: 100px;
     line-height: 100px;
     background: rgb(71, 60, 60);
+    box-shadow: 0px 1px 5px;
 }
 
 .nav-logo p {
@@ -48,6 +47,20 @@ nav {
     list-style-type: none;
 }
 
+.nav i {
+    display: none;
+    font-size: 2rem;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+.nav i:hover {
+    color: rgb(200, 200, 200);
+    cursor: pointer;
+}
+.nav.active i {
+    transform: rotate(90deg);
+}
+
 .nav-menu ul li .link {
     text-decoration: none;
     font-weight: 500;
@@ -61,8 +74,28 @@ nav {
     border-bottom: 2px solid #fff;
 }
 
+.nav-close {
+    display: block;
+    position: fixed;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: bold;
+    right: -30px;
+    z-index: 2;
+    line-height: normal;
+    transition: 0.5s ease-in-out;
+}
+.nav-close:hover,
+.nav-close:focus {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .btn {
-    width: 130px;
+    width: 15vw;
+    max-width: 120px;
+    min-width: 100px;
     height: 40px;
     font-weight: 500;
     background: rgba(255, 255, 255, 0.7);
@@ -76,20 +109,8 @@ nav {
     background: rgba(255, 255, 255, 0.7);
 }
 
-#registerBtn {
+#registerBtn, #signout-btn{
     margin-left: 15px;
-}
-
-#signout-btn {
-    margin-left: 15px;
-}
-
-.btn.white-btn {
-    background: rgba(255, 255, 255, 0.7);
-}
-
-.nav-menu-btn {
-    display: none;
 }
 
 .top-section {
@@ -101,42 +122,23 @@ nav {
     padding: 10px;
 }
 
-.top-text {
-    margin-left: 5vw;
-}
-
 .video-container {
     position: relative;
     overflow: hidden;
-    height: 100vh;
-    margin-top: -10px;
     background: #333;
 }
 
 video {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     object-fit: fill;
     z-index: -1;
     display: block;
 }
 
-.bottom {
-    background: #48455b;
-    color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.bottom h1 {
-    font-family: "Guardian-EgypTT", "Charter", "Charter Bitstream", "Cambria", "Noto Serif Light", "Droid Serif", "Georgia", "serif";
-    font-weight: 300;
-    font-size: 42px;
-}
-
 .text-overlay {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -150,82 +152,83 @@ video {
     margin: 5px;
 }
 
+.bottom {
+    background: #48455b;
+    color: #fff;
+    padding: 20px;
+    padding-top: 8vh;
+}
+
+.bottom h1 {
+    font-family: "Guardian-EgypTT", "Charter", "Charter Bitstream", "Cambria", "Noto Serif Light", "Droid Serif", "Georgia", "serif";
+    font-weight: 300;
+    font-size: 42px;
+}
+
 .main-desc {
     position: relative;
-    margin-top: 0px; /* effects the spacing between why should apply and subheadings*/
+    display: flex;
+    justify-content: space-around;
+}
+.main-desc p {
+    width: 75%;
+    font-size: 1.3rem;
+}
+.who {
+    text-align: left;
+}
+.what p {
+    margin-right: 0;
+    margin-left: auto;
 }
 
-
-.main-desc .right-aligned {
-    float: right; /* Move the image to the right */
-    margin-right: 50px; /* Add some margin for spacing */
-    position: 100px;
-}
-.main-desc .left-aligned {
-    float: left; /* Move the image to the right */
-    margin-left: 50px; /* Add some margin for spacing */
-    position: 100px;
-}
-
-.what-we-are-looking-for {
+.what {
     text-align: right;
     margin-right: 20px;
     position: relative;
-    top: -90px;
-}
-
-.why-apply-section .subheading {
     margin-top: 100px;
 }
 
-.why-apply-section {
-    margin-top: 10px; /* effects the spacing between why apply and text of what we looking for */
+.why {
+    margin-top: 10px;
     text-align: center;
     margin-left: 0px;
 }
-
-.what-we-are-looking-for {
-    margin-top: 200px;
+.main-desc img {
+    width: 30vw;
+    height: auto;
+    object-fit: contain;
+    display: inline-block;
+}
+.who img {
+    width: 35vw;
 }
 
 .subheadings {
     display: flex;
     justify-content: space-around;
     margin: 0px;
-    margin-top: 0px; /* effects spacing for all subheadings */
-
+    margin-top: 0px;
 }
 
 .subheading {
     width: 40%;
     box-sizing: border-box;
-    min-height: 20px; /* margin gap between the subheading and main heading */
+    min-height: 20px;
+    margin-top: 50px;
 }
 .subheading div {
     margin: 0 5vw;
-    
 }
 
 .subheading h2 {
     font-size: 1.8rem;
-    margin-bottom: 25px; /* margin gap between the subheading and its content */
+    margin-bottom: 2vh;
 }
 
-.subheading p {
-    font-size: 1rem;
-}
-
-.main-desc h1 {
-    margin-top: 50px;
-    margin-bottom: 10px; /* effects how close or far text away is from each other (everything on bottom homepage) */
+.main-desc h1, .why h1 {
+    margin-bottom: 5vh;
     font-size: 3.5rem;
-    margin-left: 200px;
-}
-#desc h1 {
-    margin-left: 0;
-}
-.main-desc p {
-    font-size: 1.3rem;
 }
 
 body.page {
@@ -236,7 +239,7 @@ body.page {
     margin: 0px;
 }
 
-.job-desc h1, .admin h1, .wrapper h1 {
+.admin h1, .wrapper h1 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 3rem;
@@ -248,16 +251,16 @@ body.page {
     font-size: 3rem;
 }
 
-.wrapper, .job-desc, .admin {
+.wrapper, .admin {
     padding: 0;
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    max-width: 75%;
+    max-width: 80%;
     margin: 20px auto 10vh;
 }
 
 .accordion-heading {
-    background-color: rgb(181, 185, 206);
+    background-color: rgb(220, 220, 220);
     color: black;
     cursor: pointer;
     font-size: 2rem;
@@ -281,7 +284,7 @@ body.page {
 }
 
 .accordion-heading:hover {
-    background-color: #8c92ae;
+    background-color: #c6c6c6;
 }
 
 .accordion.active .accordion-content {
@@ -290,7 +293,7 @@ body.page {
 
 .accordion-content {
     padding: 0 4vw;
-    background-color: #bec1d3;
+    background-color: rgb(220, 220, 220);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -314,8 +317,8 @@ body.page {
     background-color: darkgray;
     color: #fff;
     height: 6rem;
-    width: 18vw;
-    font-size: 1.5rem;
+    width: 35%;
+    font-size: 1.3rem;
 }
 
 .accordion-content :is(a) {
@@ -399,7 +402,6 @@ body.page {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -570,7 +572,5 @@ main:has(.admin) {
 .source {
     text-align: center;
     font-size: 0.6rem;
-    margin-top: -60px;
     margin-bottom: 50px;
-
 }

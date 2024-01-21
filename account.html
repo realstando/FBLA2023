@@ -7,6 +7,7 @@
     <title>Vamp | Admin</title>
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="media-queries.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,30 +17,27 @@
   <body class="page">
 
     <header>
-
       <nav class="nav">
         <div class="nav-logo">
-          <p>VAMP</p>
+            <p>VAMP</p>
         </div>
-        <div class="nav-menu"> 
-          <ul>
-            <li><a href='index.html' class="link">Home</a></li>
-            <li><a href='apply.html' class="link">Apply</a></li>
-            <li><a href='contact.html' class="link">Help</a></li>
+        <i class="fa-solid fa-bars"></i>
+        <div class="nav-menu">
+          <span class="nav-close">&times;</span>
+          <ul class="nav-item">
+              <li><a href='index.html' class="link active">Home</a></li>
+              <li><a href='apply.html' class="link">Apply</a></li>
+              <li><a href='contact.html' class="link">Help</a></li>
           </ul>
         </div>
 
-        <div class="nav-button">
-          <a href="login.html"><button class="btn white-btn logged-out" id="loginBtn" style="display: none;">Sign In</button></a>
-          <a href="signup.html"><button class="btn logged-out" id="registerBtn" style="display: none;">Register</button></a>
-          <a href="account.html"><button class="btn white-btn" id='accountBtn' style="display: none;">Admin</button></a>
-          <a><button class="btn white-btn logged-in" id="signout-btn" style="display: none;">Sign Out</button></a>
-        </div>
-        <div class="nav-menu-btn">
-          <i class="bx bx-menu"></i>
-        </div>  
+        <div class="nav-button nav-item">
+            <a href="login.html"><button class="btn white-btn logged-out" id="loginBtn" style="display: none;">Sign In</button></a>
+            <a href="signup.html"><button class="btn logged-out" id="registerBtn" style="display: none;">Register</button></a>
+            <a href="account.html"><button class="btn white-btn" id='accountBtn' style="display: none;">Admin</button></a>
+            <a><button class="btn white-btn logged-in" id="signout-btn" style="display: none;">Sign Out</button></a>
+        </div> 
       </nav>
-
     </header>
 
     <main> 

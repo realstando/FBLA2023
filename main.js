@@ -1,9 +1,9 @@
- const accordionLoad = () => {
-    let accordions = document.querySelectorAll(".accordion");
+const accordionLoad = () => {
+    let accordions = document.querySelectorAll(".accordion-heading");
     accordions.forEach((acco) => {
         acco.onclick = () => {
             acco.classList.toggle("active");
-            let panel = acco.lastElementChild;
+            let panel = acco.nextElementSibling;
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
             }
@@ -31,7 +31,7 @@ applyBtn.forEach((btn) => {
             applyId.id = "Sales Manager";
         } else {
             applyH.innerHTML = "Application for Marketing Coordinator";
-            applyId.id = "Mkarting Coordinator";
+            applyId.id = "Marketing Coordinator";
         }
     }
 })
@@ -39,4 +39,28 @@ if (modal) {
     close.onclick = () => {
         modal.style.display = "none";
     }
+}
+
+const navClose = document.querySelector('.nav-close');
+const menuItems = document.querySelectorAll(".nav-item");
+const menuBtn = document.querySelector(".nav i");
+menuBtn.addEventListener('click', () => {
+    document.querySelector('.nav').classList.toggle('active');
+    menuItems.forEach((item) => {
+        item.style.maxWidth = '28vw';
+    })
+    document.querySelector('.nav-menu ul').style.setProperty('--before-left', "-72vw");
+    document.querySelector('.nav-menu ul').style.setProperty('--before-color', "rgba(0, 0, 0, 0.4)");
+    document.querySelector('.nav-menu ul').style.setProperty('--before-time', "1.9s");
+    navClose.style.right = '5px';
+})
+navClose.onclick = () => {
+    document.querySelector('.nav').classList.toggle('active');
+    menuItems.forEach((item) => {
+        item.style.maxWidth = null;
+    })
+    document.querySelector('.nav-menu ul').style.setProperty('--before-time', "0.15s");
+    document.querySelector('.nav-menu ul').style.setProperty('--before-left', "0");
+    document.querySelector('.nav-menu ul').style.setProperty('--before-color', "rgba(0, 0, 0, 0)");
+    navClose.style.right = '-30px';
 }
