@@ -51,7 +51,7 @@ menuBtn.addEventListener('click', () => {
     })
     document.querySelector('.nav-menu ul').style.setProperty('--before-left', "-72vw");
     document.querySelector('.nav-menu ul').style.setProperty('--before-color', "rgba(0, 0, 0, 0.4)");
-    document.querySelector('.nav-menu ul').style.setProperty('--before-time', "1.9s");
+    document.querySelector('.nav-menu ul').style.setProperty('--before-time', "1.6s");
     navClose.style.right = '5px';
 })
 navClose.onclick = () => {

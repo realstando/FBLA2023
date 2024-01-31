@@ -26,7 +26,7 @@
         padding-top: 15px;
         --before-left: 0;
         --before-color: rgba(0, 0, 0, 0);
-        --before-time: 0.7s;
+        --before-time: 1.6s;
         transition: 0.5s ease-in-out;
         box-shadow: -2px 0 5px;
     }
@@ -48,7 +48,7 @@
         max-width: 0;
         position: fixed;
         display: block;
-        top: 330px;
+        top: 350px;
         right: 0px;
         width: 28vw;
         transition: 0.5s ease-in-out;
