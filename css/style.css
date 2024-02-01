@@ -161,93 +161,78 @@ nav {
     margin: 5px;
 }
 
-.bottom {
-    background: #48455b;
+.bottom1 {
+    background: #5a5866;
     color: #fff;
     padding: 20px;
-    padding-top: 8vh;
+    padding-top: 10vh;
+    
 }
-
-.bottom h1 {
-    font-family: "Guardian-EgypTT", "Charter", "Charter Bitstream", "Cambria", "Noto Serif Light", "Droid Serif", "Georgia", "serif";
-    font-weight: 300;
-    font-size: 42px;
+.bottom2 {
+    background: #423236;
+    color: #fff;
+    padding: 20px;
+    padding-top: 10vh;
+    
 }
-
-.main-desc {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
+.bottom3 {
+    background: #413e3a;
+    color: #fff;
+    padding: 20px;
+    padding-top: 10vh;
+    
 }
-.main-desc p {
-    width: 75%;
-    font-size: 1.3rem;
-}
-.who {
-    text-align: left;
-}
-.what p {
-    margin-right: 0;
-    margin-left: auto;
-}
-
-.what {
-    text-align: right;
-    margin-right: 20px;
-    position: relative;
-    margin-top: 100px;
-}
-
-.why {
-    margin-top: 10px;
+/* Who are we section of the website */
+.what-is-vamp-header {
+    margin-left: 17rem;
+    font-size: 3.5rem;
     text-align: center;
-    margin-left: 0px;
+    margin-top: 1vh;
+    margin-left: -90vh;
+   
 }
-.main-desc img {
+.paragraph-what-is-vamp {
+    font-size: 2.2rem;
+    margin-bottom: 30rem;
+    text-align: center;
+    margin-top: 7vh;
+    margin-left: -90vh;
+
+}
+.image {
     width: 30vw;
     height: auto;
-    object-fit: contain;
-    display: inline-block;
+    margin-top: -90vh;
+    margin-left: 110vh;
 }
-.who img {
-    width: 35vw;
+.samples-header {
+    text-align: center;
+    font-size: 4vh;
+    
 }
-
-.subheadings {
-    display: flex;
-    justify-content: space-around;
-    margin: 0px;
-    margin-top: 0px;
-}
-
-.subheading {
-    width: 40%;
-    box-sizing: border-box;
-    min-height: 20px;
-    margin-top: 50px;
-}
-.subheading div {
-    margin: 0 5vw;
+.image1 {
+    margin-top: 5vh;
+    margin-left: 20vh;
 }
 
-.subheading h2 {
-    font-size: 1.8rem;
-    margin-bottom: 2vh;
+.image2 {
+    margin-top: 5vh;
+    margin-left: 30vh;
 }
-
-.main-desc h1, .why h1 {
-    margin-bottom: 5vh;
-    font-size: 3.5rem;
+.looking-for-header {
+    text-align: center;
+    font-size: 4vh;
 }
-
-body.page {
-    background-color: #48455b;
+.paragraph-looking-for {
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 2.2rem;
 }
-
-.main-desc h2 {
-    margin: 0px;
+.job-listings-header {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 3vh;
 }
-
 .admin h1, .wrapper h1 {
     text-align: center;
     margin-bottom: 40px;
