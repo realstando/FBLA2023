@@ -103,6 +103,7 @@ nav {
     border-radius: 30px;
     cursor: pointer;
     transition: 0.3s ease;
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -111,6 +112,7 @@ nav {
 
 #registerBtn, #signout-btn{
     margin-left: 15px;
+    font-weight: bold;
 }
 
 .top-section {
@@ -128,12 +130,13 @@ nav {
     background: #333;
 }
 
-video {
+.transparent-video {
     width: 100vw;
     height: auto;
     object-fit: fill;
     z-index: -1;
     display: block;
+    opacity: 0.8;
 }
 
 .text-overlay {
@@ -146,9 +149,15 @@ video {
     width: 80%;
     margin-bottom: 0;
 }
-
+#apply-btn {
+    margin-bottom: -50px;
+    height: 70px;
+    max-width: 175px;
+    font-size: 18px;
+    font-weight: bold;
+}
 .text-overlay h1 {
-    font-size: 2em;
+    font-size: 3.5em;
     margin: 5px;
 }
 
