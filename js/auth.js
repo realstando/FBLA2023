@@ -118,9 +118,9 @@ onAuthStateChanged(auth, user => {
             accountBtn.style.display = 'none';
         }
         else {
-            loggedInLinks.forEach(item => item.style.display = 'inline-block');
-            loggedOutLinks.forEach(item => item.style.display = 'none');
-            accountBtn.style.display = 'inline-block';
+            loggedInLinks.forEach(item => item.style.display = 'none');
+            loggedOutLinks.forEach(item => item.style.display = 'inline-block');
+            accountBtn.style.display = 'none';
         }
     }
 })
