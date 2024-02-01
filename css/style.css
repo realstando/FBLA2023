@@ -166,7 +166,7 @@ nav {
 }
 
 .bottom1 {
-    background: #5a5866;
+    background: #413f4e;
     color: #fff;
     padding: 20px;
     padding-top: 10vh;
@@ -183,7 +183,7 @@ nav {
     background: #413e3a;
     color: #fff;
     padding: 20px;
-    padding-top: 10vh;
+    padding-bottom: 10vh;
     
 }
 /* Who are we section of the website */
@@ -224,6 +224,7 @@ nav {
     margin-left: 30vh;
 }
 .looking-for-header {
+    margin-top: 10vh;
     text-align: center;
     font-size: 4vh;
 }
@@ -233,9 +234,47 @@ nav {
     font-size: 2.2rem;
 }
 .job-listings-header {
-    margin-top: 10vh;
+    margin-top: 11vh;
     text-align: center;
-    font-size: 3vh;
+    font-size: 4vh;
+}
+.gallery{
+    margin-top: -10vh;
+    width: 1300px;
+    display: flex;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 100%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div img{
+    margin-top: 0vh;
+    width: 40vh;
+    transition: transform 0.5s;
+}
+.gallery::-webkit-scrollbar{
+    display:none;
+}
+.gallery-wrap{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+#backBtn, #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.gallery div img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 .admin h1, .wrapper h1 {
     text-align: center;
