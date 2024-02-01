@@ -250,7 +250,7 @@ nav {
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     max-width: 80%;
-    margin: 20px auto 10vh;
+    margin: 30px auto 10vh;
 }
 
 .accordion-heading {
@@ -265,15 +265,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 0.4s;
+    transition: 0.6s;
 }
 
 .accordion-heading i {
     font-size: 1.8rem;
-    transition: 0.4s;
+    transition: 0.6s;
 }
 
-.accordion.active .accordion-heading i {
+.accordion-heading.active i {
     transform: rotate(180deg);
 }
 
@@ -561,7 +561,7 @@ footer {
     display: block;
 }
 main:has(.admin) {
-    margin-bottom: 25vh;
+    margin-bottom: 15vh;
 }
 .source {
     text-align: center;

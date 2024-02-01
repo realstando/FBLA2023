@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Vamp | Apply</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="/css/style.css" rel="stylesheet" type="text/css" />
+      <link href="/css/media-queries.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+  <body class="page">
+    
+    <header>
+      <nav class="nav">
+        <div class="nav-logo">
+            <p>VAMP</p>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+        <div class="nav-menu">
+          <span class="nav-close">&times;</span>
+          <ul class="nav-item">
+              <li><a href='index.html' class="link">Home</a></li>
+              <li><a href='apply.html' class="link active">Apply</a></li>
+              <li><a href='contact.html' class="link">Help</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-button nav-item">
+            <a href="login.html"><button class="btn white-btn logged-out" id="loginBtn" style="display: none;">Sign In</button></a>
+            <a href="signup.html"><button class="btn logged-out" id="registerBtn" style="display: none;">Register</button></a>
+            <a href="account.html"><button class="btn white-btn" id='accountBtn' style="display: none;">Admin</button></a>
+            <a><button class="btn white-btn logged-in" id="signout-btn" style="display: none;">Sign Out</button></a>
+        </div> 
+      </nav>
+    </header>
+
+    <main>
+    
+
+      <section class="wrapper">
+        <h1>Available Jobs</h1>
+        <div class="accordion">
+          <button class="accordion-heading">
+            Fashion Designer
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Explore your passion for style and creativity as a Fashion Designer! Join a dynamic industry where artistic vision meets trendsetting innovation, and be at the forefront of shaping the future of fashion. Embrace the opportunity to bring your designs to life and leave your mark on the world of culture.
+            </p>
+            <a><button class="btn white-btn" id="Fashion Designer">Apply for Fashion Designer</button></a>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-heading">
+            Sales Manager
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Lead and drive success in a dynamic environment, where your strategic mindset and leadership skills propel a team to exceed targets. Elevate your career in the fast-paced world of sales management, shaping success and redefining goals.
+            </p>
+            <a><button class="btn white-btn" id="Sales Manager">Apply for Sales Manager</button></a>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-heading">
+            Marketing Coordinator
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Dive into a dynamic role where creativity meets strategy, coordinating campaigns that leave a lasting impact. Join a team where your organizational skills and innovative thinking contribute to the success of marketing initiatives, and be at the forefront of shaping brand narratives.
+            </p>
+            <a><button class="btn white-btn" id="Markting Coordinator">Apply for Marketing Coordinator</button></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="modal">
+        <div class="apply-modal">
+          <span class="close">&times;</span>
+          <h1>Application for Job</h1>
+          <form class="apply-form">
+            <div>
+              <label for="firstname">First Name: </label>
+              <input type="text" id="firstname" required>
+            </div>
+            <div>
+              <label for="lastname">Last Name: </label>
+              <input type="text" id="lastname" required>
+            </div>
+            <div>
+              <label for="age">Age: </label>
+              <input type="text" id="age" required>
+            </div>
+            <div>
+              <label for="phoneNumber">Phone Number: </label>
+              <input type="text" id="phoneNumber" required>
+            </div>
+            <div>
+              <label for="email">Email: </label>
+              <input type="text" id="email" required>
+            </div>
+            <div>
+              <label for="address">Address: </label>
+              <input type="text" id="address" required>
+            </div>
+            <div>
+              <label for="availability">Available Hours: </label>
+              <input type="text" id="availability" required>
+            </div>
+            <div>
+              <label for="exp">Job Experience: </label>
+              <textarea type="text" id="exp" cols="30" rows="10" required></textarea>
+            </div>
+            <div>
+              <label for="edu">Education Background: </label>
+              <textarea type="text" id="edu" cols="30" rows="10" required></textarea>
+            </div>
+            <div>
+              <label for="reason">Reason for Applying: </label>
+              <textarea type="text" id="reason" cols="30" rows="10" required></textarea>
+            </div>
+            <div>
+              <label for="other">Other Information: </label>
+              <textarea type="text" id="other" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Submit Application</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+    <script src="/js/main.js"></script>
+    <script type="module" src="/js/auth.js"></script>
+  </body>
+  <footer>
+    <div class="footer-content">
+      <h3>Vamp</h3>
+      <p>copyright &copy;2023 vamp</p>
+      <ul class="socials">
+          <li><a href="#" class="fa fa-facebook"></i></a></li>
+          <li><a href="#" class="fa fa-twitter"></i></a></li>
+          <li><a href="#" class="fa fa-youtube"></i></a></li>
+          <li><a href="#" class="fa fa-tiktok"></i></a></li>
+      </ul>
+    </div>
+</footer>
+</html>
