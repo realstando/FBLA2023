@@ -57,9 +57,14 @@
           <h1>Who are we?</h1>
         </div>
         <div class="paragraph-what-is-vamp">
-          <p> Vamp is a clothing company that aims to <br>
-            craft bold fashion statments for your everyday life<br>
-            Our goal is to have zero carbon emissions by 2025. 
+          <p>We create bold fashion statments that you<br>
+            can wear in your everyday life. Our commitment <br>                  
+             extends beyond crafting unique statements <br>
+             for you; we're dedicated to achieving zero <br>
+             carbon emissions by 2025. Choose Vamp for <br>
+             fashion that not only speaks volumes, but <br>
+             also contributes to a sustainable and <br>
+             stylish future. 
           </p>
         </div>
         <div class="image">
@@ -91,20 +96,18 @@
       <h1> Featured Job Listings</h1>
     </div>
     <div class="gallery-wrap">
-      <img src="media/back.png" id="backBtn">
+      <img src="media/left arrow.png" id="backBtn">
       <div class="gallery">
         <div>
-          <span><img src="media/image-1.png"></span>
-          <span><img src="media/image-2.png"></span>
-          <span><img src="media/image-3.png"></span>
+          <span><img src="media/cs.png"></span>
+          <span><img src="media/fashion designer.png"></span>
+          <span><img src="media/csm.png"></span>
         </div>
         <div>
-          <span><img src="media/image-4.png"></span>
-          <span><img src="media/image-5.png"></span>
-          <span><img src="media/image-6.png"></span>
+          <span><img src="media/sales.png"></span>
         </div>
       </div>
-      <img src="media/next.png" id="nextBtn">
+      <img src="/media/next.png" id="nextBtn">
     </div>
 
 <script>
@@ -122,16 +125,51 @@
 
   nextBtn.addEventListener("click", ()=>{
       scrollContainer.style.scrollBehavior = "smooth";
-      scrollContainer.scrollLeft += 900;
+      scrollContainer.scrollLeft += 400;
   });
 
   backBtn.addEventListener("click", ()=>{
       scrollContainer.style.scrollBehavior = "smooth";
-      scrollContainer.scrollLeft -= 900;
+      scrollContainer.scrollLeft -= 400;
   });
 </script>
 
 </section>
+
+<section class="bottom4"> 
+  <div class="why-apply-header">
+    <h1>Why apply?</h1>
+  </div>
+  <div class="climate-pledge">
+    <h1>Climate-Pledge <img src="/media/eco.png" id="eco"></h1>
+    <p>We are a eco-friendly company, our goal is to hit zero<br>
+      carbon emissions by 2027. We create our clothes using  <br>
+      reusable and zero waste materials. Working with us <br>
+      would lead to a postive impact on our world.</p>
+  </div>
+  <div class="employee-benefits">
+    <h1>Employee Benefits <img src="/media/money.png" id="eco"> </h1>
+    <p>Unlock a range of employee benefits, including health<br>
+      coverage, wellness programs, and a supportive and <br>
+      balanced work envionment so that you can thrive and <br>
+      succeed to further inhance your future at Vamp</p>
+  </div>
+</section>
+<section class = "bottom5">
+  <div class="career-growth">
+    <h1>Career Growth <img src="/media/rocket.png" id="rocket"> </h1>
+    <p>Prioritizing your growth is important, and we see<br>
+       that! Vamp offers tailored carrer paths, extensive <br>
+      training programs, and mentorship opportunities.</p>
+  </div>
+  <div class="diverse-culture">
+    <h1>Diverse Culture <img src="/media/earth.png" id="earth"> </h1>
+    <p>We celebrate and embrace diversity by creating<br>
+       a vibrant workplace where various perspectives<br>
+      come together, and shape the future of fashion.</p>
+  </div>
+</section>
+
     </main>
     <script src="js/main.js"></script>
     <script type="module" src="js/auth.js"></script>
@@ -151,4 +189,3 @@
   </footer>
 
 </html>
-

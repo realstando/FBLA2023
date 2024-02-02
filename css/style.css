@@ -143,6 +143,7 @@ nav {
     opacity: 0.8;
 }
 
+
 .text-overlay {
     position: absolute;
     top: 36%;
@@ -180,11 +181,23 @@ nav {
     
 }
 .bottom3 {
-    background: #413e3a;
+    background: #524551;
     color: #fff;
     padding: 20px;
-    padding-bottom: 10vh;
+    padding-bottom: 1vh;
     
+}
+.bottom4{
+    background:#413f4e;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 1vh;
+}
+.bottom5{
+    background:#413f4e;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 15vh;
 }
 /* Who are we section of the website */
 .what-is-vamp-header {
@@ -196,7 +209,7 @@ nav {
    
 }
 .paragraph-what-is-vamp {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     margin-bottom: 30rem;
     text-align: center;
     margin-top: 7vh;
@@ -206,7 +219,7 @@ nav {
 .image {
     width: 30vw;
     height: auto;
-    margin-top: -90vh;
+    margin-top: -115vh;
     margin-left: 110vh;
 }
 .samples-header {
@@ -221,20 +234,20 @@ nav {
 
 .image2 {
     margin-top: 5vh;
-    margin-left: 30vh;
+    margin-left: 25vh;
 }
 .looking-for-header {
-    margin-top: 10vh;
+    margin-top: 4vh;
     text-align: center;
     font-size: 4vh;
 }
 .paragraph-looking-for {
-    margin-top: 5vh;
+    margin-top: 1vh;
     text-align: center;
     font-size: 2.2rem;
 }
 .job-listings-header {
-    margin-top: 11vh;
+    margin-top: 8vh;
     text-align: center;
     font-size: 4vh;
 }
@@ -276,6 +289,89 @@ nav {
     cursor: pointer;
     transform: scale(1.1);
 }
+.why-apply-header{
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 4vh;
+}
+.climate-pledge {
+    margin-top: 10vh;
+    margin-left: 7.5vh;
+    text-align: left;
+    font-size: 2.9vh;
+}
+.climate-pledge h1{
+    margin-left: 15vh;
+}
+.climate-pledge p{
+    margin-top: 1.5vh;
+}
+.employee-benefits {
+    margin-top: -25vh;
+    margin-right: 7.5vh;
+    text-align: right;
+    font-size: 2.9vh;
+    
+}
+.employee-benefits h1 {
+    margin-right: 11vh;
+}
+.employee-benefits p{
+    margin-top: 1.5vh;
+}
+.career-growth {
+    margin-top: 10vh;
+    margin-right: 11vh;
+    text-align: right;
+    font-size: 2.9vh;
+}
+.career-growth h1 {
+    margin-right: 11vh;
+}
+.career-growth p{
+    margin-top: 1.5vh;
+}
+.diverse-culture {
+    margin-top: -21.1vh;
+    margin-left: 11vh;
+    text-align: left;
+    font-size: 2.9vh;
+}
+.diverse-culture h1 {
+    margin-left: 16vh;
+}
+.diverse-culture p{
+    margin-top: 1.5vh;
+}
+#eco{
+    width: 50px;
+    align-items: center;
+    margin-left: 2vh;
+
+}  
+#earth{
+    width: 60px;
+    align-items: center;
+    margin-left: 2vh;
+
+}  
+#rocket{
+    width: 60px;
+    align-items: center;
+    margin-left: 2vh;
+
+}  
+
+.text-overlay2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3vh;
+   
+}
+
 .admin h1, .wrapper h1 {
     text-align: center;
     margin-bottom: 40px;
