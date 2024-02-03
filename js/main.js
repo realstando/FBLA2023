@@ -15,7 +15,7 @@ const accordionLoad = () => {
 }
 accordionLoad();
 
-let applyBtn = document.querySelectorAll(".accordion .btn");
+let applyBtn = document.querySelectorAll(".apply-btn");
 const applyH = document.querySelector(".apply-modal h1");
 const modal = document.querySelector(".modal");
 const close = document.getElementsByClassName("close")[0];
@@ -29,9 +29,12 @@ applyBtn.forEach((btn) => {
         } else if (btn.id === "Sales Manager") {
             applyH.innerHTML = "Application for Sales Manager";
             applyId.id = "Sales Manager";
-        } else {
-            applyH.innerHTML = "Application for Marketing Coordinator";
-            applyId.id = "Marketing Coordinator";
+        } else if (btn.id === 'Customer Service'){
+            applyH.innerHTML = "Application for Customer Service";
+            applyId.id = "Customer Service";
+        } else if (btn.id === 'Communications Specialist'){
+            applyH.innerHTML = "Application for Communications Specialist";
+            applyId.id = "Communications Specialist";
         }
     }
 })
