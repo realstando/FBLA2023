@@ -459,7 +459,24 @@ nav {
     justify-content: center;
     margin: 2vh 0;
 }
+.apply1{
+    background: #000000;
+    color: #fff;
+    padding: 20px;
+    padding-top: 85vh; 
+}
+.Communications-Specialist {
 
+}
+
+.apply-vids {
+    width: 100vw;
+    height: auto;
+    object-fit: fill;
+    z-index: -1;
+    display: block;
+    opacity: 0.5;
+}
 .form-box {
     text-align: center;
     width: 90%;
@@ -469,6 +486,13 @@ nav {
     transform: translateX(-50%);
     padding: 5vh 8vh;
 }
+.divider {
+    background: #000000;
+    color: #fff;
+    padding: 20px;
+    padding-top: 35vh; 
+}
+
 
 .form-box h1 {
     font-size: 3.5rem;
