@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+/* ---------- Responsive Styles -------------- */
+
+/* Mobile Phones */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+   
+
+    .top-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-container,
+    .transparent-video {
+        width: 70vh;
+        height: 75vh;
+
+    }
+   
+
+    .text-overlay {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        font-size: 2vh;
+    }
+
+    .text-overlay h1 {
+        font-size: 5vh;
+    }
+
+    .bottom1,
+    .bottom2,
+    .bottom3,
+    .bottom4,
+    .bottom5 {
+        padding: -100px;
+        padding-top: 5vh;
+    }
+
+    .what-is-vamp-header,
+    .paragraph-what-is-vamp,
+    .samples-header,
+    .looking-for-header,
+    .paragraph-looking-for,
+    .job-listings-header,
+    .gallery,
+    .why-apply-header,
+    .paragraph-why-apply,
+    .bottom {
+        margin-left: 0;
+        text-align: center;
+        font-size: 4vh;
+    }
+    .what-is-vamp-header {
+        margin-left: -3vh;
+    }
+    .paragraph-what-is-vamp {
+        font-size: 2vh;
+        margin-left: -5vh;
+        padding-bottom: -100vh;
+    }
+
+    .image,
+    .image1,
+    .image2 {
+        margin-left: 0;
+        margin-right: auto;
+        display: none;
+        padding-bottom: -100vh;
+    }
+
+    .gallery-wrap {
+        margin: 10% 0;
+    }
+
+    #backBtn,
+    #nextBtn {
+        width: 30px;
+        margin: 20px;
+    }
+
+    .social-media img {
+        width: 30px;
+        margin: 10px;
+    }
+}
