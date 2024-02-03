@@ -14,7 +14,7 @@
     .top-section {
         flex-direction: column;
         text-align: center;
-    }
+    } 
 
     .video-container,
     .transparent-video {
@@ -27,7 +27,7 @@
     .text-overlay {
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-60%, -50%);
         width: 90%;
         font-size: 2vh;
     }
@@ -61,22 +61,47 @@
     }
     .what-is-vamp-header {
         margin-left: -3vh;
+        font-size: 4vh;
     }
     .paragraph-what-is-vamp {
-        font-size: 2vh;
-        margin-left: -5vh;
+        font-size: 2.2vh;
+        margin-left: -2vh;
         padding-bottom: -100vh;
     }
-
-    .image,
-    .image1,
+   
+    .left-aligned {
+        max-width: 170%;
+        height: auto;
+        margin-bottom: 55vh;
+        transform: translate(-345%, 200%);
+    }
+    
+    .image1 {
+        max-width: 100%; /* Set the width of the container */
+    }
     .image2 {
-        margin-left: 0;
-        margin-right: auto;
-        display: none;
-        padding-bottom: -100vh;
+        max-width: 100%; /* Set the width of the container */
+        transform: translate(-10%, 0%);
+        
     }
-
+    .clothing-images{
+        max-width: 190%;
+        height: auto;
+        margin-bottom: 5vh;
+        transform: translate(-40%, 0%);
+    }
+    
+    .gallery-wrap {
+        max-width: 100%;
+        height: 90%;
+        margin-top: 500vh;
+        margin-bottom: 75vh;
+    }
+    .gallery{
+        max-width: 100%;
+        margin-top: 0vh;
+    }
+    
     .gallery-wrap {
         margin: 10% 0;
     }
@@ -86,6 +111,83 @@
         width: 30px;
         margin: 20px;
     }
+    .why-apply-header {
+        font-size: 3vh;
+    }
+    .climate-pledge {
+        margin-top: 5vh;
+        margin-left: 7.5vh;
+        text-align: left;
+        font-size: 2.0vh;
+    }
+    .climate-pledge h1{
+        margin-left: 2.0vh;
+    }
+    .climate-pledge p{
+        margin-top: 1.5vh;
+        margin-right: 10vh;
+        
+    }
+    .employee-benefits {
+        margin-top: 5vh;
+        margin-right: 0vh;
+        text-align: right;
+        font-size: 2.0vh;
+        
+    }
+    .employee-benefits h1 {
+        margin-right: 7vh;
+    }
+    .employee-benefits p{
+        margin-top: 1.5vh;
+        margin-right: 10vh;
+    }
+    .career-growth {
+        margin-top: 0vh;
+        margin-right: 5vh;
+        text-align: right;
+        font-size: 2.0vh;
+    }
+    .career-growth h1 {
+        margin-right: 1vh;
+    }
+    .career-growth p{
+        margin-top: 1.5vh;
+        margin-right: 5vh;
+    }
+    .diverse-culture {
+        margin-top: 5.1vh;
+        margin-left: 11vh;
+        text-align: left;
+        font-size: 2.0vh;
+    }
+    .diverse-culture h1 {
+        margin-left: 0vh;
+    }
+    .diverse-culture p{
+        margin-top: 1.5vh;
+        margin-right: 10vh;
+    }
+    #eco{
+        width: 50px;
+        align-items: center;
+        margin-left: 2vh;
+    
+    }  
+    #earth{
+        width: 60px;
+        align-items: center;
+        margin-left: 2vh;
+    
+    }  
+    #rocket{
+        width: 60px;
+        align-items: center;
+        margin-left: 2vh;
+    
+    }  
+    
+   
 
     .social-media img {
         width: 30px;

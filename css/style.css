@@ -33,7 +33,7 @@ nav {
     width: 100%;
     height: 100px;
     line-height: 100px;
-    background: rgb(68, 61, 61);
+    background: rgb(39, 38, 38);
     box-shadow: 0px 1px 5px;
 }
 
@@ -664,13 +664,13 @@ nav {
     margin-bottom: 0;
 }
 .divider1 {
-    background: #000000;
+    background: #353434;
     color: #fff;
     padding: 20px;
     padding-top: 10vh; 
 }
 .divider1 h1 {
-    background: #000000;
+    
     color: #ffffff;
     padding: 20px; 
     text-align: center;
@@ -691,13 +691,12 @@ nav {
     opacity: 0.9;
 }
 .divider2 {
-    background: #000000;
+    background: #353434;
     color: #fff;
     padding: 20px;
     padding-top: 10vh; 
 }
 .divider2 h1 {
-    background: #000000;
     color: #ffffff;
     padding: 25px; 
     text-align: center;
@@ -717,13 +716,12 @@ nav {
     margin-bottom: 0; /* Specify a value for margin-bottom */
 }
 .divider3 {
-    background: #000000;
+    background: #353434;
     color: #fff;
     padding: 20px;
     padding-top: 10vh; 
 }
 .divider3 h1 {
-    background: #000000;
     color: #ffffff;
     padding: 25px; 
     text-align: center;
