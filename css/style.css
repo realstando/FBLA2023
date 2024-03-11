@@ -950,7 +950,6 @@ a .apply-btn {
     background-color: #f9fcff;
     background-image: linear-gradient(147deg, #e4c864 0%, #b2e50b 74%);
     background-size: cover;
-    -webkit-background-clip: text;
     color: transparent;
    
 }
@@ -962,7 +961,6 @@ a .apply-btn {
     background-color: #f9fcff;
     background-image: linear-gradient(147deg, #f9f2f6 0%, #9860e1 74%);
     background-size: cover;
-    -webkit-background-clip: text;
     color: transparent;
    
 }
@@ -974,7 +972,6 @@ a .apply-btn {
     background-color: #f9fcff;
     background-image: linear-gradient(147deg, #e7d5ff 0%, #b789f3 74%);
     background-size: cover;
-    -webkit-background-clip: text;
     color: transparent;
    
 }
